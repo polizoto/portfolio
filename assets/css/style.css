@@ -76,7 +76,8 @@ header nav ul li a:hover {
 .hero-caption {
     margin: 3.5%;
     color: white;
-    font-size: 38px;
+    font-size: 68px;
+    font-weight: bold;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
@@ -119,7 +120,7 @@ header nav ul li a:hover {
 }
 
 .heading h2 {
-    font-size: 33px;
+    font-size: 79px;
 }
 
 .text {
@@ -161,7 +162,7 @@ header nav ul li a:hover {
     color: white;
     font-size: 38px;
     line-height: 1.;
-    background-color: #0E2A47;
+    /* background-color: #0E2A47; */
     padding: 500px 20px 0px 0px;
     width: 100%;
     border-style: solid;
@@ -191,7 +192,7 @@ header nav ul li a:hover {
 .small-project {
     /* margin: 3.5%; */
     line-height: 1.;
-    background-color: #0E2A47;
+    /* background-color: #0E2A47; */
     /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +245,7 @@ header nav ul li a:hover {
     display: flex;
 }
 
-/* footer {
+footer {
     background-image: url("../images/Meteor.svg");
     background-size: cover;
     background-attachment: fixed;
@@ -260,10 +261,19 @@ footer h2 {
     font-weight: bold;
     font-size: 36px;
     margin: 0;
-} */
+}
+
+footer .text {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-style: none;
+}
 
 footer a {
     text-decoration: none;
+    border-bottom: 1px solid white;
 }
 
 /* footer nav {
@@ -285,10 +295,10 @@ footer ul li a {
     font-weight: bold;
 }
 
-footer ul li a:hover {
+/* footer ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
-}
+} */
 
 
 
