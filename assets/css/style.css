@@ -359,10 +359,38 @@ footer ul li a {
         border-width: 3px;
         border-color: #1C538E;
         display: flex;
+        justify-content: center;
     }
 
     .hero-caption p {
         text-align: center;
+    }
+
+    .heading {
+        margin: 3.5%;
+        color: white;
+        font-size: 38px;
+        line-height: 1.;
+        background-image: none;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .text {
+        margin: 3.5%;
+        width: 100%;
+    }
+
+    .projects {
+        margin: 3.5%;
+        width: 100%;
     }
 
     footer {
