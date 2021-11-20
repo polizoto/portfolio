@@ -76,7 +76,8 @@ header nav ul li a:hover {
 .hero-caption {
     margin: 3.5%;
     color: white;
-    font-size: 38px;
+    font-size: 68px;
+    font-weight: bold;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
@@ -85,7 +86,7 @@ header nav ul li a:hover {
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
-    
+    justify-content: right;
 }
 
 .primary-section {
@@ -99,28 +100,37 @@ header nav ul li a:hover {
 }
 
 .heading {
-    margin: 3.5%;
+    /* margin: 3.5%; */
+    margin: 2.5% 0% 0% 0%;
     color: white;
-    font-size: 18px;
+    font-size: 1.55vw;
     line-height: 1.;
-    background-color: #0E2A47;
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     padding: 20px;
     width: 20%;
-    border-style: solid;
+    border-style: none solid none none;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
+    justify-content: right;
     
 }
 
+.heading h2 {
+    font-size: 79px;
+}
+
 .text {
-    margin: 3.5%;
+    margin: 2.5% 0% 0% 2%;
     color: white;
     font-size: 18px;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    width: 60%;
+    width: 74.5%;
     border-style: solid;
     border-width: 3px;
     border-color: #1C538E;
@@ -129,30 +139,31 @@ header nav ul li a:hover {
 
 .text p {
     width: 100;
+    font-size: 30px;
 }
 
 .projects {
-    margin: 3.5%;
+    margin: 2.5% 0% 0% 2%;
     color: white;
     font-size: 18px;
     line-height: 1.;
     background-color: #0E2A47;
     /* padding: 20px; */
-    width: 60%;
-    border-style: solid;
+    width: 74.5%;
+    /* border-style: solid;
     border-width: 3px;
-    border-color: #1C538E;
+    border-color: #1C538E; */
     display: flex;
     flex-wrap: wrap; 
 }
 
 .large-project {
-    /* margin: 3.5%; */
+    margin: 0px 0px 40px 0px;
     color: white;
     font-size: 38px;
     line-height: 1.;
-    background-color: #0E2A47;
-    padding: 500px 100px 100px 100px;
+    /* background-color: #0E2A47; */
+    padding: 500px 20px 0px 0px;
     width: 100%;
     border-style: solid;
     border-width: 3px;
@@ -165,41 +176,93 @@ header nav ul li a:hover {
 }
 
 .large-project h3 {
-    margin: 3.5%;
+    margin: 0px 5px 20px 0px;
     color: white;
     font-size: 38px;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
     width: 40%;
-    border-style: solid;
+    border-style: solid solid solid none;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
+}
+
+#aim:hover {
+    filter: brightness(150%);
 }
 
 .small-project {
     /* margin: 3.5%; */
     line-height: 1.;
-    background-color: #0E2A47;
+    /* background-color: #0E2A47; */
     /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
     width: 100%;  
+    column-gap: 2%;
+    row-gap: 30px;
 }
 
 .project {
-    /* margin: 3.5%; */
+    /* margin: 5px 5px 5px 5px; */
+    color: white;
+    font-size: 38px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 300px 10px 0px 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+    width: 49%;
+}
+
+#accessibility {
+    background-image: url("../images/Wave.svg");
+}
+
+#accessibility:hover {
+    filter: brightness(150%);
+}
+
+#bash {
+    background-image: url("../images/Circuit-2.svg");
+}
+
+#bash:hover {
+    filter: brightness(150%);
+}
+
+#html {
+    background-image: url("../images/Patterns.svg");
+}
+
+#html:hover {
+    filter: brightness(150%);
+}
+
+#java {
+    background-image: url("../images/Curve.svg");
+}
+
+#java:hover {
+    filter: brightness(150%);
+}
+
+.project h3 {
+    margin: 0px 5px 20px 0px;
     color: white;
     font-size: 38px;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    border-style: solid;
+    width: 40%;
+    border-style: solid solid solid none;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
-    width: 50%;  
 }
 
 footer {
@@ -207,7 +270,8 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    padding: 20px 35px;
+    /* padding: 20px 35px; */
+    margin: 0px 0px 30px 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -217,11 +281,20 @@ footer h2 {
     color: white;
     font-weight: bold;
     font-size: 36px;
-    margin: 0;
+    /* margin: 0; */
+}
+
+footer .text {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-style: none;
 }
 
 footer a {
     text-decoration: none;
+    border-bottom: 1px solid white;
 }
 
 /* footer nav {
@@ -243,10 +316,10 @@ footer ul li a {
     font-weight: bold;
 }
 
-footer ul li a:hover {
+/* footer ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
-}
+} */
 
 
 
@@ -286,10 +359,38 @@ footer ul li a:hover {
         border-width: 3px;
         border-color: #1C538E;
         display: flex;
+        justify-content: center;
     }
 
     .hero-caption p {
         text-align: center;
+    }
+
+    .heading {
+        margin: 3.5%;
+        color: white;
+        font-size: 38px;
+        line-height: 1.;
+        background-image: none;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .text {
+        margin: 3.5%;
+        width: 100%;
+    }
+
+    .projects {
+        margin: 3.5%;
+        width: 100%;
     }
 
     footer {
