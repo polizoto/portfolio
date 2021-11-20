@@ -216,6 +216,7 @@ header nav ul li a:hover {
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
+    flex-wrap: wrap;
     width: 49%;
 }
 
@@ -321,7 +322,106 @@ footer ul li a {
     text-shadow: none;
 } */
 
+@media screen and (max-width: 1024px) {
+    header {
+      /* this will be applied on any screen smaller than 980px */
+        padding-bottom: 0px;
+        justify-content: center;
+        position: relative;
+    }
 
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero-caption {
+        margin: 3.5%;
+        color: white;
+        font-size: 38px;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-caption p {
+        text-align: center;
+    }
+
+    .heading {
+        margin: 3.5%;
+        color: white;
+        font-size: 38px;
+        line-height: 1.;
+        background-image: none;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .text {
+        margin: 3.5%;
+        width: 100%;
+    }
+
+    .projects {
+        margin: 3.5%;
+        width: 100%;
+    }
+
+    .large-project {
+        margin: 1.5% 1.5% 3.5% 1.5%;
+        width: 100%;
+    }
+
+    .project {
+        margin: 0% 1.5% 0% 1.5%;
+        width: 100%;
+    }
+
+    footer {
+        /* this will be applied on any screen smaller than 980px */
+          padding-bottom: 0px;
+          justify-content: center;
+          position: relative;
+      }
+  
+      footer h2 {
+          width: 100%;
+          text-align: center;
+      }
+  
+      footer ul {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: center;
+      }
+  
+      footer ul li a {
+          font-size: 20px;
+      }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media screen and (max-width: 980px) {
