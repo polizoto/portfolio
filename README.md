@@ -1,6 +1,6 @@
 # portfolio
 
-This repo holds the portfolio of Joseph Polizzotto. It is representative of his work as an up and coming front-end web developer. 
+This is the portfolio of Joseph Polizzotto. It is representative of his work as an up and coming front-end web developer. 
 
 The website has information about Joseph's work background, current projects, and contact information.
 
