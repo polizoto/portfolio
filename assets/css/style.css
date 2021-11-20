@@ -1,0 +1,316 @@
+/* Version .01 */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+header {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li a {
+    padding: 10px 25px;
+    font-size: 1.55vw;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.hero-caption {
+    margin: 3.5%;
+    color: white;
+    font-size: 38px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 20px;
+    width: 30%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+    
+}
+
+.primary-section {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.heading {
+    margin: 3.5%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 20px;
+    width: 20%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+    
+}
+
+.text {
+    margin: 3.5%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 20px;
+    width: 60%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    
+}
+
+.text p {
+    width: 100;
+}
+
+.projects {
+    margin: 3.5%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    /* padding: 20px; */
+    width: 60%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.large-project {
+    /* margin: 3.5%; */
+    color: white;
+    font-size: 38px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 500px 100px 100px 100px;
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+    background-image: url("../images/Circuit.svg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: 80%;
+}
+
+.large-project h3 {
+    margin: 3.5%;
+    color: white;
+    font-size: 38px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 20px;
+    width: 40%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+}
+
+.small-project {
+    /* margin: 3.5%; */
+    line-height: 1.;
+    background-color: #0E2A47;
+    /* padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;  
+}
+
+.project {
+    /* margin: 3.5%; */
+    color: white;
+    font-size: 38px;
+    line-height: 1.;
+    background-color: #0E2A47;
+    padding: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1C538E;
+    display: flex;
+    width: 50%;  
+}
+
+footer {
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* footer nav {
+    margin: 7px 0;
+} */
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+footer ul li a {
+    padding: 10px 25px;
+    font-size: 1.55vw;
+    color: white;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media screen and (max-width: 980px) {
+    header {
+      /* this will be applied on any screen smaller than 980px */
+        padding-bottom: 0px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero-caption {
+        margin: 3.5%;
+        color: white;
+        font-size: 38px;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+    }
+
+    .hero-caption p {
+        text-align: center;
+    }
+
+    footer {
+        /* this will be applied on any screen smaller than 980px */
+          padding-bottom: 0px;
+          justify-content: center;
+          position: relative;
+      }
+  
+      footer h2 {
+          width: 100%;
+          text-align: center;
+      }
+  
+      footer ul {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: center;
+      }
+  
+      footer ul li a {
+          font-size: 20px;
+      }
+} 
