@@ -85,7 +85,7 @@ header nav ul li a:hover {
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
-    
+    justify-content: right;
 }
 
 .primary-section {
@@ -100,14 +100,17 @@ header nav ul li a:hover {
 
 .heading {
     /* margin: 3.5%; */
-    margin: 3.5% 0% 2.5% 1.5%;
+    margin: 2.5% 0% 0% 0%;
     color: white;
     font-size: 1.55vw;
     line-height: 1.;
-    background-color: #0E2A47;
+    background-image: url("../images/Meteor.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     padding: 20px;
     width: 20%;
-    border-style: solid;
+    border-style: none solid none none;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
@@ -120,13 +123,13 @@ header nav ul li a:hover {
 }
 
 .text {
-    margin: 3.5%;
+    margin: 2.5% 0% 0% 2%;
     color: white;
     font-size: 18px;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    width: 60%;
+    width: 74.5%;
     border-style: solid;
     border-width: 3px;
     border-color: #1C538E;
@@ -135,25 +138,26 @@ header nav ul li a:hover {
 
 .text p {
     width: 100;
+    font-size: 30px;
 }
 
 .projects {
-    margin: 3.5%;
+    margin: 2.5% 0% 0% 2%;
     color: white;
     font-size: 18px;
     line-height: 1.;
     background-color: #0E2A47;
     /* padding: 20px; */
-    width: 60%;
-    border-style: solid;
+    width: 74.5%;
+    /* border-style: solid;
     border-width: 3px;
-    border-color: #1C538E;
+    border-color: #1C538E; */
     display: flex;
     flex-wrap: wrap; 
 }
 
 .large-project {
-    /* margin: 3.5%; */
+    margin: 0px 0px 40px 0px;
     color: white;
     font-size: 38px;
     line-height: 1.;
@@ -178,7 +182,7 @@ header nav ul li a:hover {
     background-color: #0E2A47;
     padding: 20px;
     width: 40%;
-    border-style: solid;
+    border-style: solid solid solid none;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
@@ -192,7 +196,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     width: 100%;  
-    column-gap: 30px;
+    column-gap: 2%;
     row-gap: 30px;
 }
 
@@ -208,7 +212,22 @@ header nav ul li a:hover {
     border-color: #1C538E;
     display: flex;
     width: 49%;
+}
+
+#accessibility {
+    background-image: url("../images/Wave.svg");
+}
+
+#bash {
     background-image: url("../images/Circuit-2.svg");
+}
+
+#html {
+    background-image: url("../images/Patterns.svg");
+}
+
+#java {
+    background-image: url("../images/Curve.svg");
 }
 
 .project h3 {
@@ -219,7 +238,7 @@ header nav ul li a:hover {
     background-color: #0E2A47;
     padding: 20px;
     width: 40%;
-    border-style: solid;
+    border-style: solid solid solid none;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
