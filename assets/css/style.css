@@ -37,7 +37,7 @@ header {
 header h1 {
     color: white;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 70px;
     margin: 0;
 }
 
@@ -59,9 +59,10 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 25px;
-    font-size: 1.55vw;
+    font-size: 50px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 header nav ul li a:hover {
@@ -76,7 +77,13 @@ header nav ul li a:hover {
     background-position: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+}
+
+.headshot {
+    /* justify-content: left; */
+    padding: 50px 20px 10px 200px;
 }
 
 .hero-caption {
@@ -87,11 +94,12 @@ header nav ul li a:hover {
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    width: 30%;
+    /* width: 45%; */
     border-style: solid;
     border-width: 3px;
     border-color: #1C538E;
     display: flex;
+    column-gap: 55%;
     justify-content: right;
 }
 
@@ -116,7 +124,7 @@ header nav ul li a:hover {
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px;
-    width: 20%;
+    width: 400px;
     border-style: none solid none none;
     border-width: 3px;
     border-color: #1C538E;
@@ -127,6 +135,7 @@ header nav ul li a:hover {
 
 .heading h2 {
     font-size: 79px;
+    text-align: right;
 }
 
 .text {
@@ -136,7 +145,7 @@ header nav ul li a:hover {
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    width: 74.5%;
+    width: 1420px;
     border-style: solid;
     border-width: 3px;
     border-color: #1C538E;
@@ -155,7 +164,7 @@ header nav ul li a:hover {
     line-height: 1.;
     background-color: #0E2A47;
     /* padding: 20px; */
-    width: 74.5%;
+    width: 1420px;
     /* border-style: solid;
     border-width: 3px;
     border-color: #1C538E; */
@@ -181,14 +190,14 @@ header nav ul li a:hover {
     background-position: 80%;
 }
 
-.large-project h3 {
+.large-project a h3 {
     margin: 0px 5px 20px 0px;
     color: white;
     font-size: 38px;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    width: 40%;
+    width: 100%;
     border-style: solid solid solid none;
     border-width: 3px;
     border-color: #1C538E;
@@ -274,14 +283,14 @@ header nav ul li a:hover {
     filter: brightness(150%);
 }
 
-.project h3 {
+.project a h3 {
     margin: 0px 5px 20px 0px;
     color: white;
     font-size: 38px;
     line-height: 1.;
     background-color: #0E2A47;
     padding: 20px;
-    width: 40%;
+    width: 100%;
     border-style: solid solid solid none;
     border-width: 3px;
     border-color: #1C538E;
@@ -334,7 +343,7 @@ footer ul {
 
 footer ul li a {
     padding: 10px 25px;
-    font-size: 1.55vw;
+    font-size: 50px;
     color: white;
     font-weight: bold;
 }
@@ -343,6 +352,145 @@ footer ul li a {
     border-radius: 15px;
     text-shadow: none;
 } */
+
+@media screen and (max-width: 1850px) {
+    header {
+        /* this will be applied on any screen smaller than 980px */
+          padding-bottom: 0px;
+          justify-content: center;
+          position: relative;
+      }
+
+      header h1 {
+        font-size: 100px;
+        margin: 2.5% 0% 0% 0%;
+        font-weight: bold;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        text-align: center;
+    }
+
+    header nav {
+        margin: 3.5%;
+    }
+
+    header nav ul {
+        margin-top: 3.5%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 60px;
+        text-decoration: underline;
+    }
+
+    .headshot {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        /* justify-content: center; */
+    }
+
+    .hero-caption {
+        margin: 3.5%;
+        color: white;
+        font-size: 45px;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-caption p {
+        text-align: center;
+        font-size: 80px;
+    }
+
+    .heading {
+        margin: 3.5%;
+        color: white;
+        /* font-size: 38px; */
+        line-height: 1.;
+        background-image: none;
+        background-color: #0E2A47;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .heading h2 {
+        font-size: 80px;
+    }
+
+    .text {
+        margin: 3.5%;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .projects {
+        margin: 3.5%;
+        width: 100%;
+    }
+
+    .large-project h3 {
+        width: 90%;
+    }
+
+    .project h3 {
+        width: 90%;
+    }
+
+    footer {
+        /* this will be applied on any screen smaller than 980px */
+          padding-bottom: 0px;
+          justify-content: center;
+          position: relative;
+      }
+  
+      .heading h2 {
+          width: 50%;
+          text-align: center;
+      }
+
+      footer .text {
+          margin: 0% 3.5% 3.5% 3.5%;
+          padding: 0px 20px;
+      }
+  
+      footer ul {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: center;
+      }
+  
+      footer ul li {
+        justify-content: space-between;
+    }
+
+      footer ul li a {
+          font-size: 60px;
+          border-bottom: none;
+          text-decoration: underline;
+          justify-content: space-between;
+      }
+
+}
 
 @media screen and (max-width: 1024px) {
     header {
@@ -353,10 +501,16 @@ footer ul li a {
       }
   
       header h1 {
-          width: 100%;
-          text-align: center;
-          font-size: 60px;
-      }
+        font-size: 70px;
+        margin: 2.5% 0% 0% 0%;
+        font-weight: bold;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+    }
   
       header nav {
           margin: 3.5%;
@@ -477,9 +631,15 @@ footer ul li a {
     }
 
     header h1 {
-        width: 100%;
-        text-align: center;
-        font-size: 60px;
+        font-size: 70px;
+        margin: 2.5% 0% 0% 0%;
+        font-weight: bold;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
     }
 
     header nav {
@@ -618,27 +778,27 @@ footer ul li a {
     }
 
     .hero-caption {
-        font-size: 55px;
+        text-align: center;
     }
 
     .heading h2 {
         font-size: 55px;
     }
 
-    .large-project h3 {
+    .large-project a h3 {
         margin: 0px 5px 20px 0px;
-        font-size: 38px;
-        width: 95%;
+        font-size: 30px;
+        width: 90%;
     }
         
     .project {
         width: 100%;
     }
 
-        .project h3 {
+        .project a h3 {
         margin: 0px 5px 20px 0px;
         font-size: 38px;
-        width: 50%;
+        width: 95%;
     }
 
     footer ul {
@@ -679,8 +839,9 @@ footer ul li a {
         font-size: 40px;
     }
 
-    .hero-caption {
-        font-size: 40px;
+    .hero-caption p {
+        font-size: 38px;
+        text-align: center;
     }
 
       .heading {
@@ -738,21 +899,21 @@ footer ul li a {
           width: 100%;
       }
       
-          .large-project h3 {
+          .large-project a h3 {
       font-size: 38px;
       line-height: 1.;
       background-color: #0E2A47;
       padding: 20px;
-      width: 110%;
+      width: 90%;
       border-style: solid solid solid none;
       border-width: 3px;
       border-color: #1C538E;
       display: flex;
   }
       
-      .project h3 {
+      .project a h3 {
       font-size: 38px;
-      width: 110%;
+      width: 95%;
   }
 
     footer ul li a {
