@@ -4,9 +4,10 @@
     --primary-color: #0E2A47;
     --secondary-color: #fff;
     --tertiary-color: #1C538E;
+    --background-image: url("../images/Meteor.svg");
 }
 
-/*var(--tertiary-color) */
+/*var(--background-image) */
 
 *{
 margin: 0;
@@ -15,14 +16,14 @@ box-sizing: border-box;
 }
 
 body {
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
 }
 
 header {
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -70,21 +71,28 @@ header nav ul li a {
 header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+header nav ul li a:focus     {
+    border-radius: 15px;
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 .hero {
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-between;
 }
 
 .headshot {
-    
     padding: 50px 20px 10px 200px;
 }
 
@@ -95,8 +103,7 @@ header nav ul li a:hover {
     font-weight: bold;
     line-height: 1.;
     background-color: var(--primary-color);
-    padding: 20px;
-    
+    padding: 20px;  
     border-style: solid;
     border-width: 3px;
     border-color: var(--tertiary-color);
@@ -106,7 +113,7 @@ header nav ul li a:hover {
 }
 
 .primary-section {
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -116,12 +123,11 @@ header nav ul li a:hover {
 }
 
 .heading {
-    
     margin: 2.5% 0% 0% 0%;
     color: var(--secondary-color);
     font-size: 1.55vw;
     line-height: 1.;
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -136,7 +142,7 @@ header nav ul li a:hover {
 }
 
 .heading h2 {
-    font-size: 79px;
+    font-size: 80px;
     text-align: right;
 }
 
@@ -155,7 +161,7 @@ header nav ul li a:hover {
 }
 
 .text p {
-    width: 100;
+    width: 100%;
     font-size: 30px;
 }
 
@@ -165,11 +171,7 @@ header nav ul li a:hover {
     font-size: 18px;
     line-height: 1.;
     background-color: var(--primary-color);
-    
     width: 1420px;
-    /* border-style: solid;
-    border-width: 3px;
-    border-color: var(--tertiary-color); */
     display: flex;
     flex-wrap: wrap; 
 }
@@ -179,7 +181,6 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     font-size: 38px;
     line-height: 1.;
-    
     padding: 500px 20px 0px 0px;
     width: 100%;
     border-style: solid;
@@ -188,7 +189,6 @@ header nav ul li a:hover {
     display: flex;
     background-image: url("../images/Circuit.svg");
     background-size: cover;
-    
     background-position: 80%;
 }
 
@@ -214,15 +214,32 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
+.large-project a:focus {
+    outline: 0;
+    border: none;
+}
+
+
+.large-project a:focus > h3 {
+    border-radius: 15px;
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.large-project a:hover > h3 {
+    border-radius: 15px;
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
 #aim:hover {
     filter: brightness(150%);
 }
 
 .small-project {
-    
     line-height: 1.;
-    
-    
     display: flex;
     flex-wrap: wrap;
     width: 100%;  
@@ -299,12 +316,31 @@ header nav ul li a:hover {
     display: flex;
 }
 
+.project a:focus {
+    outline: 0;
+    border: none;
+}
+
+
+.project a:focus > h3 {
+    border-radius: 15px;
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.project a:hover > h3 {
+    border-radius: 15px;
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
 footer {
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    
     margin: 0px 0px 30px 0px;
     display: flex;
     justify-content: space-between;
@@ -319,7 +355,7 @@ footer h2 {
 }
 
 footer .text {
-    background-image: url("../images/Meteor.svg");
+    background-image: var(--background-image);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -330,10 +366,6 @@ footer a {
     text-decoration: none;
     border-bottom: 1px solid var(--secondary-color);
 }
-
-/* footer nav {
-    margin: 7px 0;
-} */
 
 footer ul {
     display: flex;
@@ -350,14 +382,22 @@ footer ul li a {
     font-weight: bold;
 }
 
-/* footer ul li a:hover {
+footer ul li a:focus     {
     border-radius: 15px;
     text-shadow: none;
-} */
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+footer ul li a:hover     {
+    border-radius: 15px;
+    text-shadow: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
 
 @media screen and (max-width: 1850px) {
     header {
-        /* this will be applied on any screen smaller than 980px */
           padding-bottom: 0px;
           justify-content: center;
           position: relative;
@@ -366,7 +406,6 @@ footer ul li a {
       header h1 {
         font-size: 100px;
         margin: 2.5% 0% 0% 0%;
-        font-weight: bold;
         line-height: 1.;
         background-color: var(--primary-color);
         padding: 20px;
@@ -385,7 +424,7 @@ footer ul li a {
         width: 100%;
         justify-content: center;
     }
-
+    
     header nav ul li a {
         font-size: 60px;
         text-decoration: underline;
@@ -399,17 +438,8 @@ footer ul li a {
     }
 
     .hero-caption {
-        margin: 3.5%;
-        color: var(--secondary-color);
         font-size: 45px;
-        line-height: 1.;
-        background-color: var(--primary-color);
-        padding: 20px;
         width: 100%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
-        display: flex;
         justify-content: center;
     }
 
@@ -420,23 +450,12 @@ footer ul li a {
 
     .heading {
         margin: 3.5%;
-        color: var(--secondary-color);
-        
-        line-height: 1.;
         background-image: none;
         background-color: var(--primary-color);
-        padding: 20px;
         width: 100%;
         border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
-        display: flex;
         justify-content: center;
         
-    }
-
-    .heading h2 {
-        font-size: 80px;
     }
 
     .text {
@@ -459,7 +478,6 @@ footer ul li a {
     }
 
     footer {
-        /* this will be applied on any screen smaller than 980px */
           padding-bottom: 0px;
           justify-content: center;
           position: relative;
@@ -495,89 +513,21 @@ footer ul li a {
 }
 
 @media screen and (max-width: 1024px) {
-    header {
-        /* this will be applied on any screen smaller than 980px */
-          padding-bottom: 0px;
-          justify-content: center;
-          position: relative;
-      }
   
       header h1 {
         font-size: 70px;
-        margin: 2.5% 0% 0% 0%;
-        font-weight: bold;
-        line-height: 1.;
-        background-color: var(--primary-color);
-        padding: 20px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
     }
   
-      header nav {
-          margin: 3.5%;
-      }
-  
-      header nav ul {
-          margin-top: 3.5%;
-          width: 100%;
-          justify-content: center;
-      }
-  
       header nav ul li a {
-          font-size: 40px;
-          text-decoration: underline;
-      }
-  
-      .hero-caption {
-          margin: 3.5%;
-          color: var(--secondary-color);
-          font-size: 45px;
-          line-height: 1.;
-          background-color: var(--primary-color);
-          padding: 20px;
-          width: 100%;
-          border-style: solid;
-          border-width: 3px;
-          border-color: var(--tertiary-color);
-          display: flex;
-          justify-content: center;
+          font-size: 50px;
       }
   
       .hero-caption p {
           text-align: center;
       }
   
-      .heading {
-          margin: 3.5%;
-          color: var(--secondary-color);
-          
-          line-height: 1.;
-          background-image: none;
-          background-color: var(--primary-color);
-          padding: 20px;
-          width: 100%;
-          border-style: solid;
-          border-width: 3px;
-          border-color: var(--tertiary-color);
-          display: flex;
-          justify-content: center;
-          
-      }
-  
       .heading h2 {
-          font-size: 45px;
-      }
-  
-      .text {
-          margin: 3.5%;
-          width: 100%;
-          font-size: 30px;
-      }
-  
-      .projects {
-          margin: 3.5%;
-          width: 100%;
+          font-size: 55px;
       }
   
       .large-project h3 {
@@ -587,209 +537,59 @@ footer ul li a {
       .project h3 {
           width: 90%;
       }
-  
-      footer {
-          /* this will be applied on any screen smaller than 980px */
-            padding-bottom: 0px;
-            justify-content: center;
-            position: relative;
-        }
     
         footer h2 {
             width: 100%;
             text-align: center;
         }
   
-        footer .text {
-            margin: 0% 3.5% 3.5% 3.5%;
-            padding: 0px 20px;
-        }
-    
-        footer ul {
-            margin-top: 20px;
-            width: 100%;
-            justify-content: center;
-        }
-    
-        footer ul li {
-          justify-content: space-between;
-      }
-  
         footer ul li a {
-            font-size: 40px;
-            border-bottom: none;
-            text-decoration: underline;
-            justify-content: space-between;
+            font-size: 55px;
         }
     }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media screen and (max-width: 980px) {
-    header {
-      /* this will be applied on any screen smaller than 980px */
-        padding-bottom: 0px;
-        justify-content: center;
-        position: relative;
-    }
-
-    header h1 {
-        font-size: 70px;
-        margin: 2.5% 0% 0% 0%;
-        font-weight: bold;
-        line-height: 1.;
-        background-color: var(--primary-color);
-        padding: 20px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
-    }
-
-    header nav {
-        margin: 3.5%;
-    }
-
-    header nav ul {
-        margin-top: 3.5%;
-        width: 100%;
-        justify-content: center;
-    }
 
     header nav ul li a {
         font-size: 40px;
-        text-decoration: underline;
-    }
-
-    .hero-caption {
-        margin: 3.5%;
-        color: var(--secondary-color);
-        font-size: 45px;
-        line-height: 1.;
-        background-color: var(--primary-color);
-        padding: 20px;
-        width: 100%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
-        display: flex;
-        justify-content: center;
     }
 
     .hero-caption p {
         text-align: center;
     }
 
-    .heading {
-        margin: 3.5%;
-        color: var(--secondary-color);
-        
-        line-height: 1.;
-        background-image: none;
-        background-color: var(--primary-color);
-        padding: 20px;
-        width: 100%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .heading h2 {
-        font-size: 45px;
-    }
-
     .text p {
         margin: 3.5%;
         width: 95%;
-        font-size: 30px;
-    }
-
-    .projects {
-        margin: 3.5%;
-        width: 100%;
     }
 
     .large-project h3 {
         width: 80%;
     }
-
-    footer {
-        /* this will be applied on any screen smaller than 980px */
-          padding-bottom: 0px;
-          justify-content: center;
-          position: relative;
-      }
-  
-      footer h2 {
-          width: 100%;
-          text-align: center;
-      }
-
-      footer .text {
-          margin: 0% 3.5% 3.5% 3.5%;
-          padding: 0px 20px;
-      }
-  
-      footer ul {
-          margin-top: 20px;
-          width: 100%;
-          justify-content: center;
-      }
-  
-      footer ul li {
-        justify-content: space-between;
-    }
-
-      footer ul li a {
-          font-size: 40px;
-          border-bottom: none;
-          text-decoration: underline;
-          justify-content: space-between;
-      }
 } 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
-    header h1 {
-        font-size: 70px;
-        margin: 2.5% 0% 0% 0%;
-        font-weight: bold;
-        line-height: 1.;
-        background-color: var(--primary-color);
-        padding: 20px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: var(--tertiary-color);
-    }
 
     header nav ul li {
         width: 100%;
     }
 
     header nav ul li a {
-        font-size: 55px;
         margin: 40px 10px 40px 10px;
         text-align: center;
         display: block;
         flex: none;
         width: 100%;
         border-bottom: none;
-        text-decoration: underline;
     }
 
     .hero-caption {
         text-align: center;
     }
 
-    .heading h2 {
-        font-size: 55px;
-    }
-
     .large-project a h3 {
-        margin: 0px 5px 20px 0px;
-        font-size: 30px;
+        font-size: 38px;
         width: 90%;
     }
         
@@ -798,15 +598,7 @@ footer ul li a {
     }
 
         .project a h3 {
-        margin: 0px 5px 20px 0px;
-        font-size: 38px;
         width: 95%;
-    }
-
-    footer ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
     }
     
     footer ul li {
@@ -818,15 +610,11 @@ footer ul li a {
     }
 
     footer ul li a {
-        font-size: 55px;
         margin: 40px 10px 40px 10px;
         text-align: center;
         display: block;
         flex: none;
         width: 100%;
-        border-bottom: none;
-        text-decoration: underline;
-
   }
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -837,30 +625,13 @@ footer ul li a {
         margin: 1.5%;
     }
 
-    header nav ul li a {
-        font-size: 40px;
-    }
-
     .hero-caption p {
         font-size: 38px;
         text-align: center;
     }
 
       .heading {
-          margin: 3.5%;
-          color: var(--secondary-color);
-          font-size: 38px;
-          line-height: 1.;
-          background-image: none;
-          background-color: var(--primary-color);
-          padding: 20px;
-          width: 100%;
-          border-style: solid;
-          border-width: 3px;
-          border-color: var(--tertiary-color);
-          display: flex;
-          justify-content: center;
-          
+          font-size: 38px;     
       }
 
       .heading h2 {
@@ -868,55 +639,24 @@ footer ul li a {
     }
   
       .text p {
-          margin: 3.5%;
           width: 100%;
           font-size: 25px;
       }
   
       .projects {
-          margin: 3.5%;
-          color: var(--secondary-color);
           font-size: 38px;
-          line-height: 1.;
           background-image: none;
-          background-color: var(--primary-color);
           padding: 20px;
           width: 93%;
           border-style: solid;
           border-width: 3px;
           border-color: var(--tertiary-color);
-          display: flex;
           justify-content: center;
       }
       
       .large-project {
           width: 97%;
       }
-      
-      .small-project {
-          width: 100%;
-      }
-
-      .project {
-          width: 100%;
-      }
-      
-          .large-project a h3 {
-      font-size: 38px;
-      line-height: 1.;
-      background-color: var(--primary-color);
-      padding: 20px;
-      width: 90%;
-      border-style: solid solid solid none;
-      border-width: 3px;
-      border-color: var(--tertiary-color);
-      display: flex;
-  }
-      
-      .project a h3 {
-      font-size: 38px;
-      width: 95%;
-  }
 
     footer ul li a {
         font-size: 40px;
