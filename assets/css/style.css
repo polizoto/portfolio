@@ -80,6 +80,8 @@ header nav ul li a:focus     {
     text-shadow: none;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
+    outline: 0;
+    border: none;
 }
 
 .hero {
@@ -387,6 +389,8 @@ footer ul li a:focus     {
     text-shadow: none;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
+    outline: 0;
+    border: none;
 }
 
 footer ul li a:hover     {
