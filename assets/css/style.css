@@ -1,5 +1,11 @@
 /* Version .01 */
 
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 *{
 margin: 0;
 padding: 0;
@@ -189,6 +195,14 @@ header nav ul li a:hover {
     display: flex;
 }
 
+.large-project a {
+    text-decoration: none;
+}
+
+.large-project a:visited {
+    text-decoration: none;
+}
+
 #aim:hover {
     filter: brightness(150%);
 }
@@ -203,6 +217,14 @@ header nav ul li a:hover {
     width: 100%;  
     column-gap: 2%;
     row-gap: 30px;
+}
+
+.small-project a {
+    text-decoration: none;
+}
+
+.small-project a:visited {
+    text-decoration: none;
 }
 
 .project {
@@ -324,104 +346,126 @@ footer ul li a {
 
 @media screen and (max-width: 1024px) {
     header {
-      /* this will be applied on any screen smaller than 980px */
-        padding-bottom: 0px;
-        justify-content: center;
-        position: relative;
-    }
-
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    header nav ul li a {
-        font-size: 20px;
-    }
-
-    .hero-caption {
-        margin: 3.5%;
-        color: white;
-        font-size: 38px;
-        line-height: 1.;
-        background-color: #0E2A47;
-        padding: 20px;
-        width: 100%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: #1C538E;
-        display: flex;
-        justify-content: center;
-    }
-
-    .hero-caption p {
-        text-align: center;
-    }
-
-    .heading {
-        margin: 3.5%;
-        color: white;
-        font-size: 38px;
-        line-height: 1.;
-        background-image: none;
-        background-color: #0E2A47;
-        padding: 20px;
-        width: 100%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: #1C538E;
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .text {
-        margin: 3.5%;
-        width: 100%;
-    }
-
-    .projects {
-        margin: 3.5%;
-        width: 100%;
-    }
-
-    .large-project {
-        margin: 1.5% 1.5% 3.5% 1.5%;
-        width: 100%;
-    }
-
-    .project {
-        margin: 0% 1.5% 0% 1.5%;
-        width: 100%;
-    }
-
-    footer {
         /* this will be applied on any screen smaller than 980px */
           padding-bottom: 0px;
           justify-content: center;
           position: relative;
       }
   
-      footer h2 {
+      header h1 {
           width: 100%;
           text-align: center;
+          font-size: 60px;
       }
   
-      footer ul {
-          margin-top: 20px;
+      header nav {
+          margin: 3.5%;
+      }
+  
+      header nav ul {
+          margin-top: 3.5%;
           width: 100%;
           justify-content: center;
       }
   
-      footer ul li a {
-          font-size: 20px;
+      header nav ul li a {
+          font-size: 40px;
+          text-decoration: underline;
       }
+  
+      .hero-caption {
+          margin: 3.5%;
+          color: white;
+          font-size: 45px;
+          line-height: 1.;
+          background-color: #0E2A47;
+          padding: 20px;
+          width: 100%;
+          border-style: solid;
+          border-width: 3px;
+          border-color: #1C538E;
+          display: flex;
+          justify-content: center;
+      }
+  
+      .hero-caption p {
+          text-align: center;
+      }
+  
+      .heading {
+          margin: 3.5%;
+          color: white;
+          /* font-size: 38px; */
+          line-height: 1.;
+          background-image: none;
+          background-color: #0E2A47;
+          padding: 20px;
+          width: 100%;
+          border-style: solid;
+          border-width: 3px;
+          border-color: #1C538E;
+          display: flex;
+          justify-content: center;
+          
+      }
+  
+      .heading h2 {
+          font-size: 45px;
+      }
+  
+      .text {
+          margin: 3.5%;
+          width: 100%;
+          font-size: 30px;
+      }
+  
+      .projects {
+          margin: 3.5%;
+          width: 100%;
+      }
+  
+      .large-project h3 {
+          width: 90%;
+      }
+
+      .project h3 {
+          width: 90%;
+      }
+  
+      footer {
+          /* this will be applied on any screen smaller than 980px */
+            padding-bottom: 0px;
+            justify-content: center;
+            position: relative;
+        }
+    
+        footer h2 {
+            width: 100%;
+            text-align: center;
+        }
+  
+        footer .text {
+            margin: 0% 3.5% 3.5% 3.5%;
+            padding: 0px 20px;
+        }
+    
+        footer ul {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+    
+        footer ul li {
+          justify-content: space-between;
+      }
+  
+        footer ul li a {
+            font-size: 40px;
+            border-bottom: none;
+            text-decoration: underline;
+            justify-content: space-between;
+        }
+    }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media screen and (max-width: 980px) {
@@ -435,22 +479,28 @@ footer ul li a {
     header h1 {
         width: 100%;
         text-align: center;
+        font-size: 60px;
+    }
+
+    header nav {
+        margin: 3.5%;
     }
 
     header nav ul {
-        margin-top: 20px;
+        margin-top: 3.5%;
         width: 100%;
         justify-content: center;
     }
 
     header nav ul li a {
-        font-size: 20px;
+        font-size: 40px;
+        text-decoration: underline;
     }
 
     .hero-caption {
         margin: 3.5%;
         color: white;
-        font-size: 38px;
+        font-size: 45px;
         line-height: 1.;
         background-color: #0E2A47;
         padding: 20px;
@@ -469,7 +519,7 @@ footer ul li a {
     .heading {
         margin: 3.5%;
         color: white;
-        font-size: 38px;
+        /* font-size: 38px; */
         line-height: 1.;
         background-image: none;
         background-color: #0E2A47;
@@ -483,14 +533,23 @@ footer ul li a {
         
     }
 
-    .text {
+    .heading h2 {
+        font-size: 45px;
+    }
+
+    .text p {
         margin: 3.5%;
         width: 100%;
+        font-size: 30px;
     }
 
     .projects {
         margin: 3.5%;
         width: 100%;
+    }
+
+    .large-project h3 {
+        width: 80%;
     }
 
     footer {
@@ -504,6 +563,11 @@ footer ul li a {
           width: 100%;
           text-align: center;
       }
+
+      footer .text {
+          margin: 0% 3.5% 3.5% 3.5%;
+          padding: 0px 20px;
+      }
   
       footer ul {
           margin-top: 20px;
@@ -511,7 +575,189 @@ footer ul li a {
           justify-content: center;
       }
   
+      footer ul li {
+        justify-content: space-between;
+    }
+
       footer ul li a {
-          font-size: 20px;
+          font-size: 40px;
+          border-bottom: none;
+          text-decoration: underline;
+          justify-content: space-between;
       }
 } 
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 70px;
+        margin: 2.5% 0% 0% 0%;
+        font-weight: bold;
+        line-height: 1.;
+        background-color: #0E2A47;
+        padding: 20px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1C538E;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 55px;
+        margin: 40px 10px 40px 10px;
+        text-align: center;
+        display: block;
+        flex: none;
+        width: 100%;
+        border-bottom: none;
+        text-decoration: underline;
+    }
+
+    .hero-caption {
+        font-size: 55px;
+    }
+
+    .heading h2 {
+        font-size: 55px;
+    }
+
+    .large-project h3 {
+        margin: 0px 5px 20px 0px;
+        font-size: 38px;
+        width: 95%;
+    }
+        
+    .project {
+        width: 100%;
+    }
+
+        .project h3 {
+        margin: 0px 5px 20px 0px;
+        font-size: 38px;
+        width: 50%;
+    }
+
+    footer ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    footer ul li {
+        display: block;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer ul li a {
+        font-size: 55px;
+        margin: 40px 10px 40px 10px;
+        text-align: center;
+        display: block;
+        flex: none;
+        width: 100%;
+        border-bottom: none;
+        text-decoration: underline;
+
+  }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    
+    header h1 {
+        font-size: 50px;
+        margin: 1.5%;
+    }
+
+    header nav ul li a {
+        font-size: 40px;
+    }
+
+    .hero-caption {
+        font-size: 40px;
+    }
+
+      .heading {
+          margin: 3.5%;
+          color: white;
+          font-size: 38px;
+          line-height: 1.;
+          background-image: none;
+          background-color: #0E2A47;
+          padding: 20px;
+          width: 100%;
+          border-style: solid;
+          border-width: 3px;
+          border-color: #1C538E;
+          display: flex;
+          justify-content: center;
+          
+      }
+
+      .heading h2 {
+        font-size: 35px;
+    }
+  
+      .text p {
+          margin: 3.5%;
+          width: 100%;
+          font-size: 25px;
+      }
+  
+      .projects {
+          margin: 3.5%;
+          color: white;
+          font-size: 38px;
+          line-height: 1.;
+          background-image: none;
+          background-color: #0E2A47;
+          padding: 20px;
+          width: 93%;
+          border-style: solid;
+          border-width: 3px;
+          border-color: #1C538E;
+          display: flex;
+          justify-content: center;
+      }
+      
+      .large-project {
+          width: 97%;
+      }
+      
+      .small-project {
+          width: 100%;
+      }
+
+      .project {
+          width: 100%;
+      }
+      
+          .large-project h3 {
+      font-size: 38px;
+      line-height: 1.;
+      background-color: #0E2A47;
+      padding: 20px;
+      width: 110%;
+      border-style: solid solid solid none;
+      border-width: 3px;
+      border-color: #1C538E;
+      display: flex;
+  }
+      
+      .project h3 {
+      font-size: 38px;
+      width: 110%;
+  }
+
+    footer ul li a {
+        font-size: 40px;
+    }
+
+  }
+}
