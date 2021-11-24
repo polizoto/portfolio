@@ -15,4 +15,8 @@ The portfolio demonstrates the following CSS enhancements that are crucial to mo
 
 ## Screen Shot
 
+![screenshot of portfolio](/assets/images/screenshot.jpg)
+
 ## Live Link
+
+[live application](https://polizoto.github.io/portfolio/)
