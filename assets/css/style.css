@@ -562,6 +562,41 @@ footer ul li a:hover     {
 
 @media screen and (max-width: 980px) {
 
+    body {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    header {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    footer {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    .heading {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    .primary-section {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    .hero {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    footer .text {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
     header nav ul li a {
         font-size: 40px;
     }
