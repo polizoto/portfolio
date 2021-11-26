@@ -378,7 +378,7 @@ footer ul {
 }
 
 footer ul li a {
-    padding: 10px 25px;
+    padding: 10px 30px;
     font-size: 50px;
     color: var(--secondary-color);
     font-weight: bold;
@@ -486,6 +486,10 @@ footer ul li a:hover     {
           justify-content: center;
           position: relative;
       }
+
+      footer .text {
+        margin: 3.5% 0% 3.5% 0%; 
+    }
   
       .heading h2 {
           width: 50%;
@@ -546,7 +550,11 @@ footer ul li a:hover     {
             width: 100%;
             text-align: center;
         }
-  
+        
+        footer ul li {
+            margin: 3.5%;
+        }
+
         footer ul li a {
             font-size: 55px;
         }
@@ -569,6 +577,18 @@ footer ul li a:hover     {
 
     .large-project h3 {
         width: 80%;
+    }
+
+    footer ul li {
+        margin: 3.5%;
+    }
+
+    footer ul li a {
+        padding: 20px 30px;
+    }
+
+    footer .text {
+        margin: 3.5% 0% 3.5% 0%; 
     }
 } 
 
@@ -662,8 +682,39 @@ footer ul li a:hover     {
           width: 97%;
       }
 
-    footer ul li a {
+    footer .primary-section {
+        justify-content: center;
+        position: relative;
+        display: block;
+    }
+
+    footer .heading {
+        margin: 3.5%;
+    }
+
+    footer .text {
+        margin: 3.5% 0% 3.5% 0%; 
+    }
+
+    footer div ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer div ul li {
+        width: 100%;
+    }
+
+    footer div ul li a {
         font-size: 40px;
+        margin: 40px 0px 40px 0px;
+        text-align: center;
+        display: block;
+        flex: none;
+        width: 100%;
+        border-bottom: none;
+        word-wrap: break-word
     }
 
   }
